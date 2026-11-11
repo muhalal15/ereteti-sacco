@@ -4,20 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our routes - Ereteti Dairy Sacco</title>
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-     <header>
-        <h1> Ereteti Dairy Sacco</h1>
-        <p>Milk collected twice a day, on three routes out of Ngong.</p>
-        <nav>
-            <a href="/index.html">Home</a>
-            <a href="/about.html">About</a>
-            <a href="/routes.html">Our routes</a>
-            <a href="/contact.html">Contact</a>
-            <a href="/register.html">Join</a>
-            <a href="/deliveries.html">Deliveries</a>
-        </nav>
-    </header>
+    <header id="site-header"></header>
+    <main>
+    <section>
+        <h2>Today's collections</h2>
+        <p id="route-date"></p>
+        <label for="route-picker">Choose a route</label>
+        <select id="route-picker" name="route_picker">
+            <option value="kiserian">Kiserian route</option>
+            <option value="ngong">Ngong route</option>
+            <option value="rongai">Rongai route</option>
+        </select>
+        <h3 id="route-name"></h3>
+        <p id="route-times"></p>
+        <ul id="route-centres"></ul>
+    </section>
+
     <section id="kiserian">
         <h2>Kiserian Route</h2>
         <p>The lorry runs from 6.30am and again from 4.00pm.</p>
@@ -28,27 +34,25 @@
     </section>
 
     <section id="ngong">
-        <h2> Ngong route</h2>
+        <h2>Ngong route</h2>
         <p>The lorry runs from 6.00am and again from 3.30pm.</p>
         <ul>
-            <li> Kibiko centre</li>
+            <li>Kibiko centre</li>
             <li>Matasia centre</li>
             <li>Oloolua centre</li>
         </ul>
     </section>
 
     <section id="rongai">
-        <h2> Rongai route</h2>
+        <h2>Rongai route</h2>
         <p>The lorry runs from 6.45am and again from 4.15pm.</p>
         <ul>
             <li>Nkaimurunya centre</li>
             <li>Kware centre</li>
         </ul>
     </section>
-    <footer>
-    <p>Ereteti Dairy Sacco, PO Box 4021, Ngong.</p>
-    <p>Site built by Abdullatif Mohamed, DBT Year 1, 2026.</p>
-</footer>
+    </main>
+    <footer id="site-footer"></footer>
+    <script src="js/main.js"></script>
 </body>
-
 </html>

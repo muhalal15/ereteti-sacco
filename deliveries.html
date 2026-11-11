@@ -4,27 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Deliveries - Ereteti Dairy Sacco</title>
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <header>
-        <h1> Deliveries </h1>
-        <p>Milk collected twice a day, on three routes out of Ngong.</p>
-        <nav>
-            <a href="/index.html">Home</a>
-            <a href="/about.html">About</a>
-            <a href="/routes.html">Our routes</a>
-            <a href="/contact.html">Contact</a>
-            <a href="/register.html">Join</a>
-            <a href="/deliveries.html">Deliveries</a>
-        </nav>
-    </header>
+    <header id="site-header"></header>
 <main>
+    <h2>Deliveries</h2>
     <p>
          Milk received at the Olepolos centre on the Kiserian route,
               Monday 12 October 2026. Both sessions are listed: the
               morning collection from 6.30am and the evening collection
               from 4.00pm.
     </p>
+    <div class="table-wrap">
     <table>
       <caption>Milk received, Monday 12 October 2026</caption>
   <thead>
@@ -63,11 +56,35 @@
         </tr>
         </tfoot>
     </table>
+    </div>
+
+    <section>
+        <h2>Test a delivery entry</h2>
+        <p>Use this form to test the delivery checks. Nothing is sent to a server.</p>
+        <form id="deliver-form" action="#" method="post" onsubmit="return onDeliver(event)">
+            <label for="d-member">Member number</label>
+            <input type="text" id="d-member" name="member_number" placeholder="ER-0001">
+
+            <label for="d-litres">Litres</label>
+            <input type="number" id="d-litres" name="litres" step="0.01" min="0" placeholder="5.50">
+
+            <label for="d-route">Route</label>
+            <select id="d-route" name="route">
+                <option value="">Choose a route</option>
+                <option value="Kiserian">Kiserian</option>
+                <option value="Ngong">Ngong</option>
+                <option value="Rongai">Rongai</option>
+            </select>
+
+            <button type="submit">Record delivery (test)</button>
+            <button type="button" id="deliver-check">Check values only</button>
+            <p class="form-msg" id="deliver-msg" aria-live="polite"></p>
+        </form>
+    </section>
 </main>
 
-<footer>
-    <p>Ereteti Dairy Sacco, PO Box 4021, Ngong.</p>
-    <p>Site built by Abdullatif Mohamed, DBT Year 1, 2026.</p>
-</footer>
+<footer id="site-footer"></footer>
+<script src="js/main.js"></script>
+<script src="js/tests.js"></script>
 </body>
 </html>
