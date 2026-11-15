@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!-- contact.html — how to reach NativeGo, plus a simple contact form. -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- viewport: phones use their real width, so the one-column layout in the
+       media query takes over at 700px and below. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact NativeGo</title>
+  <!-- The one shared stylesheet, linked from every page. -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- header: same banner as every page. -->
+  <header>
+    <h1>NativeGo</h1>
+    <p>Travel Kenya with a verified local guide by your side.</p>
+  </header>
+
+  <!-- nav: same menu as every page, one Flexbox row with no bullets. -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="guides.html">Guides</a></li>
+      <li><a href="experiences.html">Experiences</a></li>
+      <li><a href="how-it-works.html">How It Works</a></li>
+      <li><a href="request.html">Request a Guide</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- main: this page's own content. -->
+  <main>
+    <section>
+      <h2>Contact us</h2>
+      <p>Questions about a trip, a guide, or this website? Reach us through any of
+        these, and we will reply within one working day.</p>
+      <p><strong>Email:</strong> info@nativengo.co.ke<br>
+        <strong>Phone / Helpline:</strong> +254 712 345 678<br>
+        <strong>Location:</strong> Nairobi, Kenya</p>
+    </section>
+
+    <!-- Simple contact form. Same no-backend note as the request form:
+         action="#" and method="get" mean it does not really send anywhere yet. -->
+    <section>
+      <h2>Send a message</h2>
+      <form action="#" method="get">
+        <!-- label's for matches the control's id, so clicking the label focuses
+             the right box and screen readers can pair them up. -->
+        <label for="name">Your name *</label>
+        <input type="text" id="name" name="name" required>
+
+        <!-- type="email" makes the browser check for an @ sign and a domain
+             before the form can be sent. -->
+        <label for="contactemail">Your email *</label>
+        <input type="email" id="contactemail" name="contactemail" required>
+
+        <label for="contactmessage">Message *</label>
+        <textarea id="contactmessage" name="contactmessage" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- aside: opening hours live here, as required for this page. -->
+  <aside>
+    <h2>Opening hours</h2>
+    <p>Monday to Friday: 8:00am – 5:00pm<br>
+      Saturday: 9:00am – 1:00pm<br>
+      Sunday: Closed</p>
+    <p>Trips themselves run seven days a week — these hours are for the office
+      and helpline only.</p>
+  </aside>
+
+  <!-- footer: same on every page. -->
+  <footer>
+    <p>NativeGo — connecting tourists with verified local guides in Kenya.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!-- about.html — what NativeGo is, why it exists, and how guide verification works. -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- viewport: tells a phone to use its real screen width, so the single-column
+       layout in the media query can take over on small screens. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About NativeGo — Our Mission and Guide Verification</title>
+  <!-- The one shared stylesheet: the same file linked from every page. -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- header: same banner as every page. -->
+  <header>
+    <h1>NativeGo</h1>
+    <p>Travel Kenya with a verified local guide by your side.</p>
+  </header>
+
+  <!-- nav: same menu as every page, styled as one Flexbox row. -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="guides.html">Guides</a></li>
+      <li><a href="experiences.html">Experiences</a></li>
+      <li><a href="how-it-works.html">How It Works</a></li>
+      <li><a href="request.html">Request a Guide</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- main: this page's own content. -->
+  <main>
+    <section>
+      <h2>About NativeGo</h2>
+      <p>It connects tourists visiting Kenya with verified local guides who live in the places
+        they show you.</p>
+      <p>The idea is simple. A first-time visitor to Nairobi, Lamu or the Mara usually depends on
+        hotel desks, random touts or guesswork. A local guide removes that guesswork: they know
+        the safe routes, the fair prices, the languages and the stories behind the places.</p>
+    </section>
+
+    <section>
+      <h2>Our mission</h2>
+      <p>To make travel in Kenya safer, fairer and more personal — for visitors and for guides.
+        Visitors get honest local knowledge. Guides, many of whom work informally today, get
+        visible profiles, public reviews and a fair way to be found and paid.</p>
+    </section>
+
+    <!-- Verification steps, shown as cards that wrap on narrow screens. -->
+    <section>
+      <h2>How guides are verified</h2>
+      <p>No one appears on NativeGo without passing these checks:</p>
+      <div class="cards">
+        <article class="card">
+          <h3>1. Identity confirmed</h3>
+          <p>Each guide submits a national ID and a phone number that is confirmed before
+            the profile goes live.</p>
+        </article>
+        <article class="card">
+          <h3>2. Experience reviewed</h3>
+          <p>We check where the guide has worked, which languages they speak, and what kind
+            of trips they have led before.</p>
+        </article>
+        <article class="card">
+          <h3>3. Reviews kept public</h3>
+          <p>After every trip, travellers leave a rating that stays visible on the guide's
+            profile. Guides cannot hide or delete reviews.</p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>Why trust matters</h2>
+      <p>Trust is the whole product. A tourist hands a stranger their day, their money and
+        sometimes their safety. That is why verification comes before listing, why prices are
+        shown up front in Kenya shillings, and why payment goes through M-Pesa with a record
+        both sides can see. If a trip goes wrong, the review system and the helpline are the
+        traveller's backup.</p>
+      <p><a href="how-it-works.html">Read how booking and safety work</a></p>
+    </section>
+  </main>
+
+  <!-- aside: opening hours, so the side column carries useful information. -->
+  <aside>
+    <h2>Opening hours</h2>
+    <p>Monday to Friday: 8:00am – 5:00pm<br>
+      Saturday: 9:00am – 1:00pm<br>
+      Sunday: Closed</p>
+    <p>Helpline: +254 712 345 678</p>
+  </aside>
+
+  <!-- footer: same on every page. -->
+  <footer>
+    <p>NativeGo — connecting tourists with verified local guides in Kenya.</p>
+  </footer>
+</body>
+</html>
