@@ -1,15 +1,15 @@
 // Ereteti Dairy Sacco - shared site script (JS Lab 3)
 // Step 3: injects the same header and footer into every page.
-// Step 4: delivery form checks on deliveries.html.
-// Step 5: route picker with dependent values on routes.html.
+// Step 4: delivery form checks on deliveries.php.
+// Step 5: route picker with dependent values on routes.php.
 
 var NAV_ITEMS = [
     ["index.html", "Home"],
     ["about.html", "About"],
-    ["routes.html", "Our routes"],
+    ["routes.php", "Our routes"],
     ["contact.html", "Contact"],
     ["register.html", "Join"],
-    ["deliveries.html", "Deliveries"]
+    ["deliveries.php", "Deliveries"]
 ];
 
 function setHeaderFooter(current) {
@@ -51,7 +51,7 @@ function setHeaderFooter(current) {
     }
 }
 
-// ---- Step 4: delivery checks (deliveries.html) ----
+// ---- Step 4: delivery checks (deliveries.php) ----
 
 function checkMemberNumber(value) {
     if (!value || value.trim() === "") {
@@ -123,7 +123,7 @@ function onDeliver(event) {
     return validateDelivery();
 }
 
-// ---- Step 5: route picker (routes.html) ----
+// ---- Step 5: route picker (routes.php) ----
 
 var ROUTE_DATA = {
     kiserian: { name: "Kiserian route", morning: "6.30am", evening: "4.00pm", centres: ["Olepolos centre", "Kandisi centre"] },
