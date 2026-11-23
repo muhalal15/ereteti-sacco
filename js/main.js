@@ -6,6 +6,7 @@
 var NAV_ITEMS = [
     ["index.html", "Home"],
     ["about.html", "About"],
+    ["member-services.html", "Member Services"],
     ["routes.php", "Our routes"],
     ["contact.html", "Contact"],
     ["register.html", "Join"],
