@@ -11,7 +11,7 @@
         <?php echo $page_title; ?> — Ereteti Dairy Sacco
     </title>
 
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/main.css">
 
     <script src="../js/main.js" defer></script>
 
@@ -30,6 +30,7 @@
     <ul>
         <li><a href="index.php">Home</a></li>
         <li><a href="about.php">About</a></li>
+        <li><a href="../member-services.html">Member Services</a></li>
         <li><a href="routes.php">Routes</a></li>
         <li><a href="contact.php">Contact</a></li>
         <li><a href="register.php">Join</a></li>
