@@ -7,27 +7,30 @@ var NAV_ITEMS = [
     ["index.html", "Home"],
     ["about.html", "About"],
     ["member-services.html", "Member Services"],
-    ["routes.php", "Our routes"],
+    ["php/routes.php", "Our routes"],
     ["contact.html", "Contact"],
     ["register.html", "Join"],
-    ["deliveries.php", "Deliveries"]
+    ["php/deliveries.php", "Deliveries"]
 ];
 
 function setHeaderFooter(current) {
     var header = document.getElementById("site-header");
     if (header) {
+        // Pages inside the php folder sit one level deeper, so their links
+        // and the logo path start with ../ to reach the main folder.
+        var up = window.location.pathname.indexOf("/php/") !== -1 ? "../" : "";
         var links = "";
         var i;
         for (i = 0; i < NAV_ITEMS.length; i++) {
-            if (NAV_ITEMS[i][0] === current) {
-                links += '<a href="' + NAV_ITEMS[i][0] + '" class="active" aria-current="page">' + NAV_ITEMS[i][1] + "</a>";
+            if (NAV_ITEMS[i][0].split("/").pop() === current) {
+                links += '<a href="' + up + NAV_ITEMS[i][0] + '" class="active" aria-current="page">' + NAV_ITEMS[i][1] + "</a>";
             } else {
-                links += '<a href="' + NAV_ITEMS[i][0] + '">' + NAV_ITEMS[i][1] + "</a>";
+                links += '<a href="' + up + NAV_ITEMS[i][0] + '">' + NAV_ITEMS[i][1] + "</a>";
             }
         }
         header.innerHTML =
             '<div class="header-inner">' +
-            '<img class="logo" src="img/logo.svg" alt="Ereteti Dairy Sacco logo" width="44" height="44">' +
+            '<img class="logo" src="' + up + 'img/logo.svg" alt="Ereteti Dairy Sacco logo" width="44" height="44">' +
             "<div><h1>Ereteti Dairy Sacco</h1>" +
             '<p class="tagline">Milk collected twice a day, on three routes out of Ngong.</p></div></div>' +
             '<nav aria-label="Main">' + links + "</nav>";

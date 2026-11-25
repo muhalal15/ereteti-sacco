@@ -11,9 +11,9 @@
         <?php echo $page_title; ?> — Ereteti Dairy Sacco
     </title>
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 
-    <script src="js/main.js" defer></script>
+    <script src="../js/main.js" defer></script>
 
 </head>
 
